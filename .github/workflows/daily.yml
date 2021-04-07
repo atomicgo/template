@@ -1,9 +1,10 @@
-on: push
+on:
+  schedule:
+    - cron: "0 0 * * *"
 
-name: AtomicGo
+name: AtomicGo (Daily)
 jobs:
   docs:
-    if: "!contains(github.event.head_commit.message, 'autoupdate')"
     runs-on: ubuntu-latest
     steps:
       - name: Update Docs

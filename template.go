@@ -7,7 +7,7 @@ You can use **Markdown** here.
 */
 package template
 
-// HelloWorld returns `Hello, World!`
+// HelloWorld returns `Hello, World!`.
 func HelloWorld() string {
 	return "Hello, World!"
 }

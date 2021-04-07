@@ -69,4 +69,4 @@ import "github.com/atomicgo/template"
 ```go
 func HelloWorld() string
 ```
-HelloWorld returns `Hello, World!`
+HelloWorld returns `Hello, World!`.

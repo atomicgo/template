@@ -28,8 +28,6 @@
 
 </p>
 
- 
-
 ---
 
 <p align="center">
@@ -43,6 +41,8 @@
 </p>
 
 ---
+
+![AtomicGo Logo](https://raw.githubusercontent.com/atomicgo/atomicgo/main/assets/header.png)
 
 Package template is a template for AtomicGo projects.
 
@@ -70,3 +70,9 @@ import "github.com/atomicgo/template"
 func HelloWorld() string
 ```
 HelloWorld returns `Hello, World!`.
+
+---
+
+> [AtomicGo.dev](https://atomicgo.dev) &nbsp;&middot;&nbsp;
+> with ❤️ by [@MarvinJWendt](https://github.com/MarvinJWendt) |
+> [MarvinJWendt.com](https://marvinjwendt.com)

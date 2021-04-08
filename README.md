@@ -44,11 +44,12 @@
 
 ![AtomicGo Logo](https://raw.githubusercontent.com/atomicgo/atomicgo/main/assets/header.png)
 
-Package template is a template for AtomicGo projects.
+Package template is used to generate new AtomicGo repositories.
 
-Here is the place for the description of the module.
+Write the description of the module here. You can use **markdown**! This
+description should clearly explain what the package does.
 
-You can use **Markdown** here.
+Example description: https://golang.org/src/encoding/gob/doc.go
 
 ## Install
 

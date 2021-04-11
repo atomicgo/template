@@ -2,7 +2,7 @@
 
 <p align="center">
 
-<a href="https://github.com/atomicgo/template/releases">
+<!-- badges:start --><a href="https://github.com/atomicgo/template/releases">
 <img src="https://img.shields.io/github/v/release/atomicgo/template?style=flat-square" alt="Latest Release">
 </a>
 
@@ -20,7 +20,7 @@
 
 <a href="https://github.com/atomicgo/template/issues">
 <img src="https://img.shields.io/github/issues/atomicgo/template.svg?style=flat-square" alt="Issues">
-</a>
+</a><!-- badges:end -->
 
 <a href="https://opensource.org/licenses/MIT" target="_blank">
 <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT">
@@ -33,7 +33,7 @@
 <p align="center">
 <strong><a href="#install">Get The Module</a></strong>
 |
-<strong><a href="https://pkg.go.dev/github.com/atomicgo/template" target="_blank">Documentation</a></strong>
+<strong><a href="https://pkg.go.dev/github.com/atomicgo/<!-- reponame:start --><!-- reponame:end -->" target="_blank">Documentation</a></strong>
 |
 <strong><a href="https://github.com/atomicgo/atomicgo/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a></strong>
 |
@@ -42,7 +42,11 @@
 
 ---
 
-![AtomicGo Logo](https://raw.githubusercontent.com/atomicgo/atomicgo/main/assets/header.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/atomicgo/atomicgo/main/assets/header.png" alt="AtomicGo">
+</p>
+
+## Description
 
 Package template is used to generate new AtomicGo repositories.
 
@@ -54,12 +58,12 @@ Example description: https://golang.org/src/encoding/gob/doc.go
 ## Install
 
 ```console
+# Execute this command inside your project
 go get -u github.com/atomicgo/template
 ```
 
-## Import
-
 ```go
+// Add this to your imports
 import "github.com/atomicgo/template"
 ```
 

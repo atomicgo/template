@@ -61,6 +61,7 @@ issues:
         - errcheck
         - dupl
         - gocritic
+        - wrapcheck
     # https://github.com/go-critic/go-critic/issues/926
     - linters:
         - gocritic

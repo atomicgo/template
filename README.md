@@ -33,7 +33,7 @@
 <p align="center">
 <strong><a href="#install">Get The Module</a></strong>
 |
-<strong><a href="https://pkg.go.dev/github.com/atomicgo/template" target="_blank">Documentation</a></strong>
+<strong><a href="https://pkg.go.dev/atomicgo.dev/template#section-documentation" target="_blank">Documentation</a></strong>
 |
 <strong><a href="https://github.com/atomicgo/atomicgo/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a></strong>
 |
@@ -57,14 +57,33 @@ Example description: https://golang.org/src/encoding/gob/doc.go
 
 ## Install
 
-```console
-# Execute this command inside your project
-go get -u github.com/atomicgo/template
-```
+<p align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</p>
+<h3  align="center"><pre>go get atomicgo.dev/template</pre></h3>
+<p align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</p>
 
 ```go
 // Add this to your imports
-import "github.com/atomicgo/template"
+import "atomicgo.dev/template"
 ```
 
 ## Usage

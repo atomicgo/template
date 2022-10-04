@@ -24,7 +24,7 @@
 </a>
   
 <a href="https://goreportcard.com/report/github.com/atomicgo/template" target="_blank">
-<img src="https://goreportcard.com/badge/github.com/atomicgo/template" alt="Go report">
+<img src="https://goreportcard.com/badge/github.com/atomicgo/template?style=flat-square" alt="Go report">
 </a>   
 
 </p>

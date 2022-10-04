@@ -33,7 +33,7 @@
 <p align="center">
 <strong><a href="#install">Get The Module</a></strong>
 |
-<strong><a href="https://pkg.go.dev/github.com/atomicgo/template" target="_blank">Documentation</a></strong>
+<strong><a href="https://pkg.go.dev/atomicgo.dev/template#section-documentation" target="_blank">Documentation</a></strong>
 |
 <strong><a href="https://github.com/atomicgo/atomicgo/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a></strong>
 |
@@ -42,25 +42,43 @@
 
 ---
 
-![AtomicGo Logo](https://raw.githubusercontent.com/atomicgo/atomicgo/main/assets/header.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/atomicgo/atomicgo/main/assets/header.png" alt="AtomicGo">
+</p>
 
-Package template is a template for AtomicGo projects.
+<p align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+  -----------------------------------------------------------------------------------------------------
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</p>
+<h3  align="center"><pre>go get atomicgo.dev/template</pre></h3>
+<p align="center">
+<table>
+<tbody>
+<td align="center">
+<img width="2000" height="0"><br>
+   -----------------------------------------------------------------------------------------------------
+<img width="2000" height="0">
+</td>
+</tbody>
+</table>
+</p>
 
-Here is the place for the description of the module.
+## Description
 
-You can use **Markdown** here.
+Package template is used to generate new AtomicGo repositories.
 
-## Install
+Write the description of the module here. You can use **markdown**! This
+description should clearly explain what the package does.
 
-```console
-go get -u github.com/atomicgo/template
-```
+Example description: https://golang.org/src/encoding/gob/doc.go
 
-## Import
-
-```go
-import "github.com/atomicgo/template"
-```
 
 ## Usage
 

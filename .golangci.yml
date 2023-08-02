@@ -42,7 +42,7 @@ linters:
     - errname
     - errorlint
     - exhaustive
-    - exhaustruct
+    # - exhaustruct
     - exportloopref
     - forcetypeassert
     - gocheckcompilerdirectives

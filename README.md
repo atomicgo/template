@@ -84,8 +84,9 @@ Example description: https://golang.org/src/encoding/gob/doc.go
 package main
 
 import (
-	"atomicgo.dev/template"
 	"fmt"
+
+	"atomicgo.dev/template"
 )
 
 func main() {
@@ -125,8 +126,9 @@ HelloWorld returns \`Hello, World\!\`.
 package main
 
 import (
-	"atomicgo.dev/template"
 	"fmt"
+
+	"atomicgo.dev/template"
 )
 
 func main() {

@@ -1,8 +1,9 @@
 package template_test
 
 import (
-	"atomicgo.dev/template"
 	"fmt"
+
+	"atomicgo.dev/template"
 )
 
 func Example_demo() {

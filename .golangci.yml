@@ -170,6 +170,7 @@ linters-settings:
       - cb func() # often used as a callback variable name
       - t testing.T # default testing.T variable name
       - b testing.B # default testing.B variable name
+      - sb strings.Builder # often used as a variable name
 
 issues:
   exclude-rules:

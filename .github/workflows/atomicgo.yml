@@ -111,7 +111,7 @@ jobs:
           fi
           echo "::endgroup::"
 
-      - name: Run custom CI system (bash equivalent of main.go)
+      - name: Run custom CI system
         run: |
           echo "::group::Run custom CI system"
           echo "::notice::Counting unit tests"

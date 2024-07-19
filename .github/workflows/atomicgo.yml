@@ -15,6 +15,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   docs:
     if: "!contains(github.event.head_commit.message, 'autoupdate')"
@@ -23,5 +26,5 @@ jobs:
       - name: Update Docs
         uses: atomicgo/ci@main
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TERM: xterm-256color

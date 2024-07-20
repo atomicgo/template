@@ -139,6 +139,9 @@ linters-settings:
     line-length: 140
     tab-width: 1
 
+  nlreturn:
+    block-size: 2
+
   exhaustive:
     check-generated: false
     default-signifies-exhaustive: true

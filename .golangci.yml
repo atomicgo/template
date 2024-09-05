@@ -179,6 +179,7 @@ linters-settings:
       - wg sync.WaitGroup # common WaitGroup name
       - t time.Time # often used as a variable name
       - f func() # often used as a callback variable name
+      - f func(T) # often used as a generic callback variable name
       - cb func() # often used as a callback variable name
       - t testing.T # default testing.T variable name
       - b testing.B # default testing.B variable name

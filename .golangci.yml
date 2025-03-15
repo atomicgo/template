@@ -30,7 +30,6 @@ linters:
     - gomodguard # no forbidden imports
     - grouper # unused
     - importas # some aliases are fine
-    - loggercheck # no slog support
     - makezero # make with non-zero initial length is fine
     - noctx # http request may be sent without context
     - nonamedreturns # named returns are fine

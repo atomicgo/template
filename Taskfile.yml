@@ -13,6 +13,8 @@ version: "3"
 tasks:
   test:
     desc: Run all tests
+    env:
+      CGO_ENABLED: 1
     cmds:
       - go test -race ./...
 
@@ -24,6 +26,8 @@ tasks:
 
   tdd:
     desc: Test Driven Development - Watch tests
+    env:
+      CGO_ENABLED: 1
     watch: true
     sources:
       - "**/*.go"

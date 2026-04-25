@@ -14,7 +14,7 @@ tasks:
   test:
     desc: Run all tests
     cmds:
-      - go test ./...
+      - go test -race ./...
 
   benchmark:
     desc: Run all benchmarks
@@ -28,7 +28,7 @@ tasks:
     sources:
       - "**/*.go"
     cmds:
-      - go test ./...
+      - go test -race ./...
 
   lint:
     desc: Run all linters

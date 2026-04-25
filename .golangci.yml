@@ -8,108 +8,59 @@
 # │                                                                   │
 # └───────────────────────────────────────────────────────────────────┘
 
+version: "2"
+
 run:
   timeout: 3m
 
 linters:
-  enable-all: true
-  disable:
-    - copyloopvar # fixed in go 1.22+
-    - depguard # no forbidden imports
-    - dogsled # blank identifiers are allowed
-    - dupword # duplicate words are allowed
-    - exhaustruct # many structs don't need to be exhaustive
-    - forbidigo # no forbidden identifiers
-    - ginkgolinter # not used
-    - gochecknoinits # init functions are fine, if used carefully
-    - goconst # many false positives
-    - godot # comments don't need to be complete sentences
-    - godox # todo comments are allowed
-    - goheader # no need for a header
-    - gomoddirectives # allow all directives
-    - gomodguard # no forbidden imports
-    - grouper # unused
-    - importas # some aliases are fine
-    - makezero # make with non-zero initial length is fine
-    - noctx # http request may be sent without context
-    - nonamedreturns # named returns are fine
-    - testableexamples # examples do not need to be testable (have declared output)
-    - testifylint # testify is not recommended
-    - testpackage # not a go best practice
-    - unparam # interfaces can enforce parameters
-    - zerologlint # slog should be used instead of zerolog
-    - mnd # too many detections
-    - cyclop # covered by gocyclo
-    - gochecknoglobals # there are many valid reasons for global variables, depending on the project
-    - ireturn # there are too many exceptions
-    - tenv # deprecated
+  default: standard
 
-linters-settings:
-  wsl:
-    allow-cuddle-declarations: true
-    force-err-cuddling: true
-    force-case-trailing-whitespace: 3
+  enable:
+    # Correctness and bug finding
+    - bodyclose
+    - durationcheck
+    - errchkjson
+    - errorlint
+    - gosec
+    - nilerr
+    - nilnesserr
+    - wastedassign
 
-  funlen:
-    lines: 100
-    statements: 50
-    ignore-comments: true
+    # Maintainability and common hygiene
+    - asasalint
+    - bidichk
+    - gocritic
+    - makezero
+    - misspell
+    - nolintlint
+    - prealloc
+    - reassign
+    - revive
+    - unconvert
+    - usestdlibvars
+    - whitespace
+    - wsl_v5
 
-  lll:
-    line-length: 140
-    tab-width: 1
+  settings:
+    govet:
+      enable:
+        - shadow
 
-  nlreturn:
-    block-size: 2
+    wsl_v5:
+      case-max-lines: 3
+      default: default
+      disable:
+        - decl
 
-  exhaustive:
-    check-generated: false
-    default-signifies-exhaustive: true
+  exclusions:
+    generated: strict
+    rules:
+      - path: "_test(_[^/]+)?\\.go"
+        linters:
+          - errcheck
 
-  varnamelen:
-    ignore-type-assert-ok: true # ignore "ok" variables
-    ignore-map-index-ok: true
-    ignore-chan-recv-ok: true
-    ignore-decls:
-      - n int # generic number
-      - x int # generic number (e.g. coordinate)
-      - y int # generic number (e.g. coordinate)
-      - z int # generic number (e.g. coordinate)
-      - i int # generic number
-      - a int # generic number
-      - r int # generic number (e.g. red or radius)
-      - g int # generic number (e.g. green)
-      - b int # generic number (e.g. blue)
-      - r int64 # generic number (e.g. red or radius)
-      - g int64 # generic number (e.g. green)
-      - b int64 # generic number (e.g. blue)
-      - c int # generic number (e.g. count)
-      - j int # generic number (e.g. index)
-      - T any # generic type
-      - a any # generic any (e.g. data)
-      - b any # generic any (e.g. body)
-      - c any # generic any
-      - d any # generic any (e.g. data)
-      - data any # generic data
-      - n any # generic any
-      - ch chan T # common generic channel name
-      - ch chan int # common generic channel name
-      - ch chan any # common generic channel name
-      - wg sync.WaitGroup # common generic WaitGroup name
-      - t time.Time # often used as a variable name
-      - f func() # often used as a callback variable name
-      - f func(T) # often used as a generic callback variable name
-      - cb func() # often used as a callback variable name
-      - t testing.T # default testing.T variable name
-      - b testing.B # default testing.B variable name
-      - sb strings.Builder # often used as a variable name
-
-issues:
-  exclude-rules:
-    - path: "_test(_[^/]+)?\\.go"
-      linters:
-        - gochecknoglobals
-        - noctx
-        - funlen
-        - dupl
-        - errcheck
+formatters:
+  enable:
+    - gofmt
+    - goimports
